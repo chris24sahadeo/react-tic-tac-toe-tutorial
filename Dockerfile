@@ -1,15 +1,15 @@
-#!/bin/bash
+# #!/bin/bash
 
-FROM node:18-alpine
+# FROM node:18-alpine
 
-ENV NODE_ENV production
+# ENV NODE_ENV production
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY package.json ./
+# # COPY package.json ./
 
-RUN npm install --production
+# # RUN npm install --production
 
-COPY . .
+# # COPY . .
 
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
