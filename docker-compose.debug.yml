@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  app-debugged:
+    image: node:18-alpine
+    environment:
+      NODE_ENV: development
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+      # - 9229:9229
+    command: sh -c "npm install && npm start"
+    # command: ["node", "--inspect=0.0.0.0:9229", "/index.js"]
